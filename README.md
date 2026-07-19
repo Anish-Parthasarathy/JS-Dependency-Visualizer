@@ -29,9 +29,10 @@ A browser-based tool that parses ES module `import` statements across uploaded J
 - Only relationships between uploaded files are graphed; external packages appear as leaf dependency nodes with no further resolution.
 
 ## Project structure
-
+```
 ├── index.html      # markup and layout
 ├── style.css       # styling
 ├── script.js       # event wiring, file state store, orchestration
 ├── parser.js       # import extraction (File -> dependency list)
 └── graph.js        # D3 force simulation, cycle detection, rendering
+```
