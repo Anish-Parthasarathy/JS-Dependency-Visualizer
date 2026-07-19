@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DepGraph</title>
 </head>
 
 <body>
@@ -54,10 +54,20 @@
              <button id='reset' type = "button" class="reset-button display-block" onclick="window.location.reload()">↺ Reset &amp; Upload New</button>
         </div>
         
+        <div class="canvas-wrapper">
 
+            <div id="introText" class="intro-overlay">
+                <p style="font-size: 4rem;">🕸️</p>
+                <p style="color: var(--text-secondary);">Visualize JavaScript Dependencies <br>
+                </p>
+                <p style="font-size: 0.75rem;">Parses ES module import statements across your files<br>
+                   Renders them as an interactive, force-directed dependency graph.
+                </p>
+            </div>
             <svg id="graphContainer" class="graphDisplay" >
             
             </svg>
+        </div>
 
        
         

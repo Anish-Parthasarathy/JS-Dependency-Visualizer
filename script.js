@@ -135,4 +135,7 @@ function updateScreen(){
         label.removeChild(beforeSub);
     const reset = document.getElementById("reset");
     reset.classList.remove("display-block");
+
+    const intro = document.getElementById("introText");
+    intro.classList.add("intro-out");
 }
