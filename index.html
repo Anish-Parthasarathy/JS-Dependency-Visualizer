@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="screenSplit">
+        
+        <div class="leftHalf">
+
+            <div class="sidebar-header">
+                <div class="logo-icon">🕸️</div>
+                <div class="logo-text">
+                    <h1>DepGraph</h1>
+                    <p>JS Dependency Visualizer</p>
+                </div>
+            </div>
+
+            <div id="fileUpload" class="Files-Before" tabindex="0" role="button">
+
+                <label for="dropZone" class="input" id="inputLabel">
+                    <span class="input-symbol">📂</span>
+                    <div id="beforeSub">
+                        <p class="drop-sub"><span class="drop-text">Drag &amp; Drop</span> or <span class="browse-text">Browse Files</span><br>
+                        .js and .txt files only
+                        </p>
+                    </div>
+                    <input type = "file" id="dropZone" accept = ".txt, .js" multiple class="input" style="display: none; width: 100%;height: 100%;">
+                </label>
+
+                
+            
+            </div>
+
+            <div id="list-label" class="section-label" ></div>
+
+            <div class="file-Name-List" id="fileList">
+            
+            </div> 
+                   
+            <button id='sub' type = "button" class="submit-button cursor-block">Analyze Dependency</button>
+
+            <div id="details-label" class="section-label"></div>
+
+            <div id="graphDetails" class="graph-stat-container">
+
+            </div>
+            
+             <button id='reset' type = "button" class="reset-button display-block" onclick="window.location.reload()">↺ Reset &amp; Upload New</button>
+        </div>
+        
+
+            <svg id="graphContainer" class="graphDisplay" >
+            
+            </svg>
+
+       
+        
+
+</div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script type = "module" src="script.js"></script>
+
+</body>
+</html>
+ 
