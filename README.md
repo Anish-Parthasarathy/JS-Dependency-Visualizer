@@ -2,7 +2,7 @@
 
 A browser-based tool that parses ES module `import` statements across uploaded JavaScript files and renders the dependency relationships as an interactive, force-directed graph.
 
-[**Live demo:**](https://js-dependency-visualizer.vercel.app/)
+[**Live demo**](https://js-dependency-visualizer.vercel.app/)
 
 ## What it does
 
